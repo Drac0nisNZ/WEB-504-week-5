@@ -1,0 +1,46 @@
+body {
+    margin: 50px;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas: 
+
+    "....... header header"
+    "sidenav content content"
+    "footer footer footer";
+
+    background-color: white;
+    color: darkgrey;
+}
+
+.area {
+    background-color: darkgrey;
+    color: white;
+    padding: 20px;
+    font-size: 150%;
+    border-radius: 5px;
+}
+
+.header, 
+.footer {
+    background-color: #1b0202;
+}
