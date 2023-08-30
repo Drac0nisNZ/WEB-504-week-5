@@ -1,0 +1,40 @@
+body {
+    margin: 40px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+    background-color: blue;
+    color: coral;
+}
+
+.area {
+    background-color: brown;
+    color: aqua;
+    padding: 20px;
+    font-size: 150%;
+    border-radius: 5px;
+}
+
+.box-a {
+    grid-column: col1-start/col3-start;
+    grid-row: row1-start;
+}
+
+.box-b {
+    grid-column: col3-start;
+    grid-row: row1-start/row2-end;
+}
+
+.box-c {
+    grid-column: col1-start;
+    grid-row: row2-start;
+}
+
+.box-d {
+    grid-column: col2-start;
+    grid-row: row2-start;
+}
