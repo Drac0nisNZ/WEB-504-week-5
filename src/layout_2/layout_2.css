@@ -31,7 +31,7 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-areas: 
-    
+
     "header"
     "side-nav-one"
     "content"
@@ -50,7 +50,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 600px;) {
+@media only screen and (min-width: 600px) {
     .container {
         grid-gap: 20%;
         grid-template-columns: 120px auto 120px;
